@@ -20,7 +20,7 @@
 				</div>
 			</div>
 			<div id="Footer">
-				<span>Visit <a href="http://www.silverstripe.com" title="Visit www.silverstripe.com">www.silverstripe.com</a> to download the CMS(test)</span>
+				<span>Visit <a href="http://www.silverstripe.com" title="Visit www.silverstripe.com">www.silverstripe.com</a> to download the CMS</span>
 			</div>
 		</div>
 		$SilverStripeNavigator
