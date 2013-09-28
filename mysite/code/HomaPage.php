@@ -1,5 +1,5 @@
 <?php
-class Page extends SiteTree {
+class HomePage extends SiteTree {
 
 	public static $db = array(
 	);
@@ -8,7 +8,7 @@ class Page extends SiteTree {
 	);
 
 }
-class Page_Controller extends ContentController {
+class HomePage_Controller extends ContentController {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -38,10 +38,6 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS('layout'); 
 		Requirements::themedCSS('typography'); 
 		Requirements::themedCSS('form'); 
-		Requirements::themedCSS('bootstrap.min');
-		Requirements::themedCSS('bootstrap-responsive.min');
-		
-		Requirements::javascript("themes/simple/javascript/bootstrap.min.js");
 	}
 
 }

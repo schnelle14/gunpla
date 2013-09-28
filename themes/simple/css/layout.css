@@ -105,6 +105,7 @@ body {
     background: #ededed;
     min-width: 240px; 
     -webkit-text-size-adjust: none; /* The text size is not adjusted for Safari on iPhone */
+    pointer-events: none !important;
 }
 	.ie7 body,
 	.ie8 body {
@@ -112,7 +113,6 @@ body {
 	}
 	.main {
 	    background: #fff;
-	    padding: 40px 0 60px;
 	    min-height: 300px;
 	}
 	.inner {
@@ -134,7 +134,41 @@ body {
 		display: none;
 	}
 
+.content-wide{
+    background-color: #515151;
+	clear: both;
+	max-height: 1300px;
+    min-height: 650px;
+    min-width: 510px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 1300px;
+    z-index: -100;
+}
+.top{
+	background-color: #848484;
+    height: 200px;
 
+}
+.contentDiv {
+    background-color: #707070;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+    width: 90%;
+    z-index: 100;
+    pointer-events: auto;
+}
+.bottom{
+    background-color: #b7b7b7;
+    height: 251px;
+    margin-top: -90px;
+    position: relative;
+    width: 100%;
+    z-index: -10;
+}
 /* HEADER */
 .header {
     background: #161616;

@@ -26,16 +26,24 @@ Change it, enhance it and most importantly enjoy it!
 	<% require themedCSS('typography') %>
 	<% require themedCSS('form') %>
 	<% require themedCSS('layout') %>
+	<% require themedCSS('bootstrap.min') %>
+	<% require themedCSS('bootstrap-responsive.min') %>
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 </head>
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>">
-<% include Header %>
-<div class="main" role="main">
-	<div class="inner typography line">
+
+<div class="main content-wide" role="main">
+	
+	<div class="top"></div>
+	<div class="inner typography line contentDiv">
+		<% include Header %>
 		$Layout
+		<% include Footer %>
 	</div>
+	
+	<div class="bottom"></div>
 </div>
-<% include Footer %>
+
 
 <% require javascript('framework/thirdparty/jquery/jquery.js') %>
 <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
