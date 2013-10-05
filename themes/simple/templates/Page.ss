@@ -38,6 +38,7 @@ Change it, enhance it and most importantly enjoy it!
 	<div class="inner typography line contentDiv">
 		<% include Header %>
 		$Layout
+		<span> Hello World </span>
 		<% include Footer %>
 	</div>
 	
